@@ -2,6 +2,7 @@
 #include <string.h>
 #include <conio.h> //GETCH
 #include <windows.h> //POS
+
 using namespace std;
 
 struct Node{
@@ -14,14 +15,13 @@ Node *tail = NULL;
 Node *panggilan;
 Node *r_head = NULL;
 Node *r_tail = NULL;
-int selesai = 0;
 int no_antrean = 0;
 int now = 0;
 int maks = 3;
 
 void gotoxy(int x, int y){
- 	COORD pos = {x, y};
- 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	COORD pos = {x, y};
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }
 int name(const char*s){
     int jumlah = 0;
@@ -54,6 +54,7 @@ void box(){
 	gotoxy(10,19); cout <<"TOTAL ANTREAN";
 	gotoxy(no_antre(now),20); cout <<now;
 }
+
 
 
 //========================================================================= TAMBAH
@@ -119,7 +120,6 @@ panggil(){
 				r_tail=baru;
 				r_tail->next=NULL;
 			}
-			selesai++;
 		
        	if(head==tail){ 
         	delete  head;  
@@ -170,7 +170,7 @@ void riwayat(){
 	int no_urut = 1;
     Node *bantu;
     bantu=r_head;
-    cout <<"SELESAI: ("<<selesai<<")\n";
+    cout <<"SELESAI: ("<<no_antrean<<")\n";
     if(r_head!=NULL){
         while(bantu!=NULL){
         	cout <<"=================================\n";
