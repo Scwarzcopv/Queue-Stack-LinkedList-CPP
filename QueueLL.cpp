@@ -56,7 +56,6 @@ void box(){
 }
 
 
-
 //========================================================================= TAMBAH
 void tambah(){
 	if (now < maks){
@@ -93,6 +92,7 @@ void tambah(){
 //========================================================================= PANGGIL
 panggil(){
     if(head==NULL){
+    	panggilan = NULL;
     	box();
 		gotoxy(1,15); cout <<"         NO. ANTREAN 0          ";
 		gotoxy(1,16); cout <<"              ---               ";
