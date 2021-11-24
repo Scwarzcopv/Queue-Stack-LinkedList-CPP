@@ -37,8 +37,8 @@ int name(const char*s){
 }
 int no_antre(int i){
 	if (i < 10) {return 16;}
-	else if (i < 100) {return 15;}
-	else if (i < 1000) {return 14;}
+	else if (10 < i < 100) {return 15;}
+	else if (100 < i < 1000) {return 14;}
 }
 void box(){
 	if (panggilan != NULL){
