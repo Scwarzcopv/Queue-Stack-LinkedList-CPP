@@ -3,7 +3,7 @@ Queue Linked List #Data Nama & Umur
 
 Stack Linked List #Data Buku & Harga Buku
 
-**Indo*
+**Indonesian*
 ## Preview (Queue):
 ![QLL1](https://user-images.githubusercontent.com/92729204/143466814-e85d685c-50bd-43aa-afdc-5efdeb72158c.jpg)
 ![QLL2](https://user-images.githubusercontent.com/92729204/143466860-35e33dfd-1ced-4057-b42a-fe05974e5d26.jpg)
