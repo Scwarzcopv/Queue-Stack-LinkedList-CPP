@@ -1,6 +1,7 @@
 ## QueueLinkedList-CPP
-Queue Linked List (C++)
-## Preview:
+Queue & Stack Linked List (C++)
+Indo
+## Preview (Queue):
 ![C1](https://user-images.githubusercontent.com/92729204/143192962-5a346bab-a1de-4050-8601-516423a11998.jpg)
 ![C2](https://user-images.githubusercontent.com/92729204/143193037-76e0c6bf-9636-4140-8fa2-03c929564382.jpg)
 
