@@ -1,5 +1,6 @@
-## QueueLinkedList-CPP
+## Queue-Stack-LinkedList-CPP
 Queue & Stack Linked List (C++)
+
 Indo
 ## Preview (Queue):
 ![C1](https://user-images.githubusercontent.com/92729204/143192962-5a346bab-a1de-4050-8601-516423a11998.jpg)
