@@ -2,7 +2,6 @@
 #include <string.h>
 #include <conio.h> //GETCH
 #include <windows.h> //POS
-
 using namespace std;
 
 struct Node{
@@ -17,7 +16,7 @@ Node *r_head = NULL;
 Node *r_tail = NULL;
 int no_antrean = 0;
 int now = 0;
-int maks = 3;
+int maks = 5;
 
 void gotoxy(int x, int y){
 	COORD pos = {x, y};
@@ -59,9 +58,10 @@ void box(){
 //========================================================================= TAMBAH
 void tambah(){
 	if (now < maks){
+		string aa; fflush(stdin); 
 		char a[30];
 		int b;
-		cout<<"Nama : "; cin>>a;
+		cout<<"Nama : "; getline(cin, aa); strcpy(a, aa.c_str());
 		cout<<"Umur : "; cin>>b;
 		Node *baru;
 		baru= new Node;
@@ -147,19 +147,19 @@ void tampil(){
     bantu=head;
     if(head!=NULL){
         while(bantu!=NULL){
-        	cout <<"=================================\n";
+        	cout <<"==================================\n";
         	cout <<no_urut<<".)\t"
 							<<bantu->nama<<"\n"
 							<<"\t"<<bantu->umur<<" tahun\n";
             bantu=bantu->next;
             no_urut++;
         }
-        cout <<"=================================\n";
+        cout <<"==================================\n";
     }
 	else{
-		cout <<"=================================\n";
+		cout <<"==================================\n";
 		cout <<"DATA MASIH KOSONG\n";
-		cout <<"=================================\n";
+		cout <<"==================================\n";
 	}
 	getch();
 }
@@ -173,19 +173,19 @@ void riwayat(){
     cout <<"SELESAI: ("<<no_antrean<<")\n";
     if(r_head!=NULL){
         while(bantu!=NULL){
-        	cout <<"=================================\n";
+        	cout <<"==================================\n";
         	cout <<no_urut<<".)\t"
 							<<bantu->nama<<"\n"
 							<<"\t"<<bantu->umur<<" tahun\n";
             bantu=bantu->next;
             no_urut++;
         }
-        cout <<"=================================\n";
+        cout <<"==================================\n";
     }
 	else{
-		cout <<"=================================\n";
-		cout <<"    DATA KOSONG\n";
-		cout <<"=================================\n";
+		cout <<"==================================\n";
+		cout <<"\tDATA KOSONG\n";
+		cout <<"==================================\n";
 	}
 	//---------------------------------------------------
 	int no_urut2 = 1;
@@ -194,19 +194,19 @@ void riwayat(){
     cout <<"\n\nAKAN DATANG: ("<<now<<")\n";
     if(head!=NULL){
         while(bantu2!=NULL){
-        	cout <<"=================================\n";
+        	cout <<"==================================\n";
         	cout <<no_urut2<<".)\t"
 							<<bantu2->nama<<"\n"
 							<<"\t"<<bantu2->umur<<" tahun\n";
             bantu2=bantu2->next;
             no_urut2++;
         }
-        cout <<"=================================\n";
+        cout <<"==================================\n";
     }
 	else{
-		cout <<"=================================\n";
-		cout <<"    DATA KOSONG\n";
-		cout <<"=================================\n";
+		cout <<"==================================\n";
+		cout <<"\tDATA KOSONG\n";
+		cout <<"==================================\n";
 	}
 	getch();
 }
