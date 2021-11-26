@@ -52,6 +52,10 @@ void box(){
 	}
 	gotoxy(10,19); cout <<"TOTAL ANTREAN";
 	gotoxy(no_antre(now),20); cout <<now;
+	if (now==maks){
+		gotoxy(7,19); cout <<"ANTREAN SUDAH PENUH";
+		gotoxy(no_antre(now),20); cout <<now;
+	}
 }
 
 
@@ -61,8 +65,8 @@ void tambah(){
 		string aa; fflush(stdin); 
 		char a[30];
 		int b;
-		cout<<"Nama : "; getline(cin, aa); strcpy(a, aa.c_str());
-		cout<<"Umur : "; cin>>b;
+		gotoxy(0,11); cout<<"Nama : "; getline(cin, aa); strcpy(a, aa.c_str());
+		gotoxy(0,12); cout<<"Umur : "; cin>>b;
 		Node *baru;
 		baru= new Node;
 		strcpy(baru->nama,a);
@@ -78,26 +82,18 @@ void tambah(){
 			tail->next=NULL;
 		}
 		now++;
-		box();
-		gotoxy(00,13); getch();
 	}
 	else{
-		box();
-		gotoxy(1,19); cout <<"            ANTREAN             ";
-		gotoxy(1,20); cout <<"             PENUH              ";
-		gotoxy(00,13); getch();
+		gotoxy(0,11); cout <<"==ANTREAN FULL=="; 
+		gotoxy(0,13); getch();
 	}
 }
 
 //========================================================================= PANGGIL
 panggil(){
     if(head==NULL){
-    	panggilan = NULL;
-    	box();
-		gotoxy(1,15); cout <<"         NO. ANTREAN 0          ";
-		gotoxy(1,16); cout <<"              ---               ";
-		gotoxy(1,17); cout <<"              ---               ";
-    	gotoxy(00,13); getch();
+    	gotoxy(0,11); cout <<"==ANTREAN KSNG=="; 
+		gotoxy(0,13); getch();
 	}
 	else{
 		delete panggilan;
@@ -134,8 +130,6 @@ panggil(){
 	    }
         no_antrean++;
         now--;
-        box();
-        gotoxy(00,13); getch();
 	}
 }
 
@@ -227,6 +221,7 @@ int main()
              <<"\n|       4. History               |"
              <<"\n|       5. Exit                  |"
              <<"\n==================================";
+        box();
 			gotoxy(0,14); cout <<"==================================";
 			gotoxy(0,15);cout<<"|";gotoxy(0,16);cout<<"|";gotoxy(0,17);cout<<"|";
 			gotoxy(33,15);cout<<"|";gotoxy(33,16);cout<<"|";gotoxy(33,17);cout<<"|";
