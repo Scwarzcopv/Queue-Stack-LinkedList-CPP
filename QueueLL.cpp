@@ -65,8 +65,8 @@ void tambah(){
 		string aa; fflush(stdin); 
 		char a[30];
 		int b;
-		gotoxy(0,11); cout<<"Nama : "; getline(cin, aa); strcpy(a, aa.c_str());
-		gotoxy(0,12); cout<<"Umur : "; cin>>b;
+		gotoxy(0,10); cout<<"Nama : "; getline(cin, aa); strcpy(a, aa.c_str());
+		gotoxy(0,11); cout<<"Umur : "; cin>>b;
 		Node *baru;
 		baru= new Node;
 		strcpy(baru->nama,a);
