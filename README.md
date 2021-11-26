@@ -5,11 +5,11 @@ Stack Linked List #Data Buku & Harga Buku
 
 **Indonesian*
 ## Preview (Queue):
-![QLL1](https://user-images.githubusercontent.com/92729204/143466814-e85d685c-50bd-43aa-afdc-5efdeb72158c.jpg)
-![QLL2](https://user-images.githubusercontent.com/92729204/143466860-35e33dfd-1ced-4057-b42a-fe05974e5d26.jpg)
+![QLL a](https://user-images.githubusercontent.com/92729204/143582208-d14fb121-e09f-4855-ba05-5619baaf4a76.jpg)
+![QLL c](https://user-images.githubusercontent.com/92729204/143582220-f62522c4-79a2-4b70-8399-8c7fd3717dbc.jpg)
 
-![QLL3](https://user-images.githubusercontent.com/92729204/143466881-9602ec2f-35cf-43f4-a237-239c3a802f8f.jpg)
-![QLL4](https://user-images.githubusercontent.com/92729204/143466882-46747a70-7f09-4302-95cd-437cafba2077.jpg)
+![QLL d](https://user-images.githubusercontent.com/92729204/143582226-55bd36a1-f952-4802-8abb-af8c075b29c9.jpg)
+![QLL e](https://user-images.githubusercontent.com/92729204/143582231-4277acb6-97d4-4dda-9dfe-330d9415d1d6.jpg)
 
 ## Preview (Stack):
 ![SLL1](https://user-images.githubusercontent.com/92729204/143468670-45fe3049-d372-416f-a101-ff99ee8d1d66.jpg)
