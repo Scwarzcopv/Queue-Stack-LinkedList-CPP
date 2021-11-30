@@ -11,7 +11,6 @@ struct Node{
 };
 Node *head = NULL;
 Node *tail = NULL;
-Node *panggilan;
 Node *r_head = NULL;
 Node *r_tail = NULL;
 int no_antrean = 0;
@@ -64,11 +63,6 @@ panggil(){
 		gotoxy(00,11); getch();
 	}
 	else{
-		delete panggilan;
-		panggilan = new Node;
-		strcpy(panggilan->nama,head->nama);
-		panggilan->harga=head->harga;
-		
 		//MENAMBAH DATA KE RIWAYAT
 			Node *baru;
 			baru= new Node;
@@ -181,8 +175,7 @@ void riwayat(){
 }
 
 //========================================================================= MAIN
-int main()
-{
+int main(){
 	int pilih;
 	do
 	{
