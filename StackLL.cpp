@@ -11,7 +11,6 @@ struct Node{
 };
 Node *head = NULL;
 Node *tail = NULL;
-Node *panggilan;
 Node *r_head = NULL;
 Node *r_tail = NULL;
 int no_antrean = 0;
@@ -44,7 +43,6 @@ int tampungan(char a[30], int b){
 		t_head = baru;
 	}
 }
-
 
 //========================================================================= TAMBAH
 void tambah(){
@@ -84,11 +82,6 @@ panggil(){
 		gotoxy(00,11); getch();
 	}
 	else{
-			delete panggilan;
-			panggilan = new Node;
-			strcpy(panggilan->nama,t_head->nama);
-			panggilan->harga=t_head->harga;
-			
 		//MENAMBAH DATA KE RIWAYAT
 				Node *baru;
 				baru= new Node;
