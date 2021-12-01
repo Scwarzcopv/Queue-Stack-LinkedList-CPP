@@ -136,10 +136,10 @@ void tampil(){
 
 //========================================================================= RIWAYAT
 void riwayat(int pilihan){	
+	gotoxy(0,8);
 	int no_urut = 1;
     Node *bantu;
     if (pilihan==1){
-    	gotoxy(0,8);
 	    bantu=r_head;
 	    cout <<"DATA POP: ("<<no_antrean<<")\n";
 	    if(r_head!=NULL){
@@ -160,7 +160,6 @@ void riwayat(int pilihan){
 		}
 	}
 	else if (pilihan==2){
-		gotoxy(0,8);
 	    bantu=r_tail;
 	    cout <<"DATA POP: ("<<no_antrean<<")\n";
 	    if(r_tail!=NULL){
